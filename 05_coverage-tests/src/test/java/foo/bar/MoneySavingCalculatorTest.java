@@ -21,4 +21,13 @@ public class MoneySavingCalculatorTest {
                         BigDecimal.valueOf(1000), Period.ofYears(1))
         );
     }
+    @Test
+    @Description("During period of 1 year, when saving is 25 every month, total savings should be 30")
+    void saveEachMonhDuringYear25pln() {
+        Assertions.assertEquals(
+                BigDecimal.valueOf(300),
+                calc.calculateSavings(SavingFrequency.EACH_MONTH,
+                        BigDecimal.valueOf(25), Period.ofMonths(12))
+        );
+    }
 }
