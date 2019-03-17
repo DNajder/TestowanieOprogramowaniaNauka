@@ -17,7 +17,7 @@ public class RectangleTest {
         assertEquals(expectedArea, rectangle.area(), "Area of RectangleTest is different than expected");
     }
 
-    @ParameterizedTest(name = "Area of RectangleTest({0}) should be {1}")
+    @ParameterizedTest(name = "Circumference of RectangleTest({0}*{1}) should be {2}")
     @CsvSource({
             "0, 0, 0",
             "1, 4, 10",

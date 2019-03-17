@@ -1,6 +1,6 @@
 package foo.bar;
 
 interface Figure {
-    int area();
-    int circumference();
+    double area();
+    double circumference();
 }
